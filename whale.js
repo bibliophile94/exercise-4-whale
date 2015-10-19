@@ -4,4 +4,7 @@ console.log(num);
 if (isNaN(num)) {
     num = 0;
 }
+$.get('/whale/txt/' + num + '.txt', function(txt)) {
+    console.log(txt);
+});
 });

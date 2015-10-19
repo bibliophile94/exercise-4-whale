@@ -5,6 +5,7 @@ if (isNaN(num)) {
     num = 0;
 }
 $.get('/whale/txt/' + num + '.txt', function(txt)) {
-    console.log(txt);
+    $('a').html(txt);
+	$('a').attr('href', '#' + (num + 1));
 });
 });
